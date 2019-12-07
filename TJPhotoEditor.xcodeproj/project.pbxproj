@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2A956EE1F309CB1004D6AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A956ED1F309CB1004D6AEB /* AppDelegate.swift */; };
+		E2A956F01F309CB1004D6AEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A956EF1F309CB1004D6AEB /* ViewController.swift */; };
+		E2A956F31F309CB1004D6AEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A956F11F309CB1004D6AEB /* Main.storyboard */; };
+		E2A956F51F309CB1004D6AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A956F41F309CB1004D6AEB /* Assets.xcassets */; };
+		E2A956F81F309CB1004D6AEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A956F61F309CB1004D6AEB /* LaunchScreen.storyboard */; };
+		E2A9579D1F30BB79004D6AEB /* ImagePlaceholder.psd in Resources */ = {isa = PBXBuildFile; fileRef = E2A9579C1F30BB79004D6AEB /* ImagePlaceholder.psd */; };
+		E2A957A11F30BC40004D6AEB /* ImagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A957A01F30BC40004D6AEB /* ImagePlaceholder.png */; };
+		E2A957AA1F31FFB8004D6AEB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A957A91F31FFB8004D6AEB /* AboutViewController.swift */; };
+		E2A957B31F3209D3004D6AEB /* DimmingPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A957B01F3209D3004D6AEB /* DimmingPresentationController.m */; };
+		E2A957B41F3209D3004D6AEB /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A957B21F3209D3004D6AEB /* GradientView.m */; };
+		E2A957B91F320A28004D6AEB /* ExpandAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A957B61F320A28004D6AEB /* ExpandAnimationController.m */; };
+		E2A957BA1F320A28004D6AEB /* ShrinkDismissalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A957B81F320A28004D6AEB /* ShrinkDismissalAnimationController.m */; };
+		E2A957DA1F32156C004D6AEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A957D81F32156C004D6AEB /* Localizable.strings */; };
+		E2A957DE1F3216C6004D6AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2A957E01F3216C6004D6AEB /* InfoPlist.strings */; };
+		E2A957E41F321844004D6AEB /* ImagePlaceholder-ZH.png in Resources */ = {isa = PBXBuildFile; fileRef = E2A957E21F321844004D6AEB /* ImagePlaceholder-ZH.png */; };
+		E2A957E51F321844004D6AEB /* ImagePlaceholder-ZH.psd in Resources */ = {isa = PBXBuildFile; fileRef = E2A957E31F321844004D6AEB /* ImagePlaceholder-ZH.psd */; };
+		E2FBD7991FADA0E700AD8280 /* CLImageEditor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2FBD73D1FADA0E600AD8280 /* CLImageEditor.bundle */; };
+		E2FBD79A1FADA0E700AD8280 /* CLImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD73F1FADA0E600AD8280 /* CLImageEditor.m */; };
+		E2FBD79B1FADA0E700AD8280 /* CLImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7411FADA0E600AD8280 /* CLImageEditorTheme.m */; };
+		E2FBD79C1FADA0E700AD8280 /* CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7431FADA0E600AD8280 /* CLImageToolInfo.m */; };
+		E2FBD79D1FADA0E700AD8280 /* CLAdjustmentTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7471FADA0E600AD8280 /* CLAdjustmentTool.m */; };
+		E2FBD79E1FADA0E700AD8280 /* ArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD74A1FADA0E600AD8280 /* ArrowView.m */; };
+		E2FBD79F1FADA0E700AD8280 /* CLArrowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD74C1FADA0E600AD8280 /* CLArrowTool.m */; };
+		E2FBD7A01FADA0E700AD8280 /* CLBlurTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD74F1FADA0E600AD8280 /* CLBlurTool.m */; };
+		E2FBD7A11FADA0E700AD8280 /* CLBubbleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7521FADA0E600AD8280 /* CLBubbleTool.m */; };
+		E2FBD7A21FADA0E700AD8280 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7541FADA0E600AD8280 /* ShapeView.m */; };
+		E2FBD7A31FADA0E700AD8280 /* CLClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7571FADA0E600AD8280 /* CLClippingTool.m */; };
+		E2FBD7A41FADA0E700AD8280 /* CLDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD75A1FADA0E600AD8280 /* CLDrawTool.m */; };
+		E2FBD7A51FADA0E700AD8280 /* CLBloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD75E1FADA0E600AD8280 /* CLBloomEffect.m */; };
+		E2FBD7A61FADA0E700AD8280 /* CLGloomEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7601FADA0E600AD8280 /* CLGloomEffect.m */; };
+		E2FBD7A71FADA0E700AD8280 /* CLHighlightShadowEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7621FADA0E600AD8280 /* CLHighlightShadowEffect.m */; };
+		E2FBD7A81FADA0E700AD8280 /* CLHueEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7641FADA0E600AD8280 /* CLHueEffect.m */; };
+		E2FBD7A91FADA0E700AD8280 /* CLPixellateEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7661FADA0E600AD8280 /* CLPixellateEffect.m */; };
+		E2FBD7AA1FADA0E700AD8280 /* CLPosterizeEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7681FADA0E600AD8280 /* CLPosterizeEffect.m */; };
+		E2FBD7AB1FADA0E700AD8280 /* CLSpotEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD76A1FADA0E600AD8280 /* CLSpotEffect.m */; };
+		E2FBD7AC1FADA0E700AD8280 /* CLEffectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD76C1FADA0E600AD8280 /* CLEffectBase.m */; };
+		E2FBD7AD1FADA0E700AD8280 /* CLEffectTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD76E1FADA0E600AD8280 /* CLEffectTool.m */; };
+		E2FBD7AE1FADA0E700AD8280 /* CLFilterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7711FADA0E600AD8280 /* CLFilterBase.m */; };
+		E2FBD7AF1FADA0E700AD8280 /* CLFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7731FADA0E600AD8280 /* CLFilterTool.m */; };
+		E2FBD7B01FADA0E700AD8280 /* CLImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7751FADA0E600AD8280 /* CLImageToolBase.m */; };
+		E2FBD7B11FADA0E700AD8280 /* CLRotateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7781FADA0E600AD8280 /* CLRotateTool.m */; };
+		E2FBD7B21FADA0E700AD8280 /* CLToneCurveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD77B1FADA0E600AD8280 /* CLToneCurveTool.m */; };
+		E2FBD7B31FADA0E700AD8280 /* CLCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD77E1FADA0E600AD8280 /* CLCircleView.m */; };
+		E2FBD7B41FADA0E700AD8280 /* CLColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7801FADA0E600AD8280 /* CLColorPickerView.m */; };
+		E2FBD7B51FADA0E700AD8280 /* CLImageEditorTheme+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7821FADA0E600AD8280 /* CLImageEditorTheme+Private.m */; };
+		E2FBD7B61FADA0E700AD8280 /* CLImageToolInfo+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7841FADA0E600AD8280 /* CLImageToolInfo+Private.m */; };
+		E2FBD7B71FADA0E700AD8280 /* CLToolbarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7881FADA0E600AD8280 /* CLToolbarMenuItem.m */; };
+		E2FBD7B81FADA0E700AD8280 /* UIView+CLImageToolInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD78A1FADA0E600AD8280 /* UIView+CLImageToolInfo.m */; };
+		E2FBD7B91FADA0E700AD8280 /* CLClassList.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD78D1FADA0E600AD8280 /* CLClassList.m */; };
+		E2FBD7BA1FADA0E700AD8280 /* CLSplineInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD78F1FADA0E600AD8280 /* CLSplineInterpolator.m */; };
+		E2FBD7BB1FADA0E700AD8280 /* UIDevice+SystemVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7911FADA0E600AD8280 /* UIDevice+SystemVersion.m */; };
+		E2FBD7BC1FADA0E700AD8280 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7931FADA0E600AD8280 /* UIImage+Utility.m */; };
+		E2FBD7BD1FADA0E700AD8280 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7951FADA0E600AD8280 /* UIView+Frame.m */; };
+		E2FBD7BE1FADA0E700AD8280 /* _CLImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD7981FADA0E600AD8280 /* _CLImageEditorViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E2A956EA1F309CB1004D6AEB /* TJPhotoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJPhotoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A956ED1F309CB1004D6AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2A956EF1F309CB1004D6AEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2A956F21F309CB1004D6AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2A956F41F309CB1004D6AEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2A956F71F309CB1004D6AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2A956F91F309CB1004D6AEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2A9579C1F30BB79004D6AEB /* ImagePlaceholder.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImagePlaceholder.psd; sourceTree = "<group>"; };
+		E2A957A01F30BC40004D6AEB /* ImagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImagePlaceholder.png; sourceTree = "<group>"; };
+		E2A957A51F30C454004D6AEB /* TJPhotoEditor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TJPhotoEditor-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2A957A91F31FFB8004D6AEB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E2A957AF1F3209D3004D6AEB /* DimmingPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimmingPresentationController.h; sourceTree = "<group>"; };
+		E2A957B01F3209D3004D6AEB /* DimmingPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DimmingPresentationController.m; sourceTree = "<group>"; };
+		E2A957B11F3209D3004D6AEB /* GradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		E2A957B21F3209D3004D6AEB /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		E2A957B51F320A28004D6AEB /* ExpandAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandAnimationController.h; sourceTree = "<group>"; };
+		E2A957B61F320A28004D6AEB /* ExpandAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandAnimationController.m; sourceTree = "<group>"; };
+		E2A957B71F320A28004D6AEB /* ShrinkDismissalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShrinkDismissalAnimationController.h; sourceTree = "<group>"; };
+		E2A957B81F320A28004D6AEB /* ShrinkDismissalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShrinkDismissalAnimationController.m; sourceTree = "<group>"; };
+		E2A957BB1F3212E3004D6AEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		E2A957D91F32156C004D6AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E2A957DB1F321575004D6AEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E2A957DF1F3216C6004D6AEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E2A957E11F3216C8004D6AEB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E2A957E21F321844004D6AEB /* ImagePlaceholder-ZH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImagePlaceholder-ZH.png"; sourceTree = "<group>"; };
+		E2A957E31F321844004D6AEB /* ImagePlaceholder-ZH.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ImagePlaceholder-ZH.psd"; sourceTree = "<group>"; };
+		E2FBD73D1FADA0E600AD8280 /* CLImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLImageEditor.bundle; sourceTree = "<group>"; };
+		E2FBD73E1FADA0E600AD8280 /* CLImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageEditor.h; sourceTree = "<group>"; };
+		E2FBD73F1FADA0E600AD8280 /* CLImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageEditor.m; sourceTree = "<group>"; };
+		E2FBD7401FADA0E600AD8280 /* CLImageEditorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageEditorTheme.h; sourceTree = "<group>"; };
+		E2FBD7411FADA0E600AD8280 /* CLImageEditorTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageEditorTheme.m; sourceTree = "<group>"; };
+		E2FBD7421FADA0E600AD8280 /* CLImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolInfo.h; sourceTree = "<group>"; };
+		E2FBD7431FADA0E600AD8280 /* CLImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageToolInfo.m; sourceTree = "<group>"; };
+		E2FBD7461FADA0E600AD8280 /* CLAdjustmentTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAdjustmentTool.h; sourceTree = "<group>"; };
+		E2FBD7471FADA0E600AD8280 /* CLAdjustmentTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLAdjustmentTool.m; sourceTree = "<group>"; };
+		E2FBD7491FADA0E600AD8280 /* ArrowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowView.h; sourceTree = "<group>"; };
+		E2FBD74A1FADA0E600AD8280 /* ArrowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowView.m; sourceTree = "<group>"; };
+		E2FBD74B1FADA0E600AD8280 /* CLArrowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLArrowTool.h; sourceTree = "<group>"; };
+		E2FBD74C1FADA0E600AD8280 /* CLArrowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLArrowTool.m; sourceTree = "<group>"; };
+		E2FBD74E1FADA0E600AD8280 /* CLBlurTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlurTool.h; sourceTree = "<group>"; };
+		E2FBD74F1FADA0E600AD8280 /* CLBlurTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlurTool.m; sourceTree = "<group>"; };
+		E2FBD7511FADA0E600AD8280 /* CLBubbleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBubbleTool.h; sourceTree = "<group>"; };
+		E2FBD7521FADA0E600AD8280 /* CLBubbleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBubbleTool.m; sourceTree = "<group>"; };
+		E2FBD7531FADA0E600AD8280 /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
+		E2FBD7541FADA0E600AD8280 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
+		E2FBD7561FADA0E600AD8280 /* CLClippingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClippingTool.h; sourceTree = "<group>"; };
+		E2FBD7571FADA0E600AD8280 /* CLClippingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClippingTool.m; sourceTree = "<group>"; };
+		E2FBD7591FADA0E600AD8280 /* CLDrawTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDrawTool.h; sourceTree = "<group>"; };
+		E2FBD75A1FADA0E600AD8280 /* CLDrawTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDrawTool.m; sourceTree = "<group>"; };
+		E2FBD75D1FADA0E600AD8280 /* CLBloomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBloomEffect.h; sourceTree = "<group>"; };
+		E2FBD75E1FADA0E600AD8280 /* CLBloomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBloomEffect.m; sourceTree = "<group>"; };
+		E2FBD75F1FADA0E600AD8280 /* CLGloomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLGloomEffect.h; sourceTree = "<group>"; };
+		E2FBD7601FADA0E600AD8280 /* CLGloomEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLGloomEffect.m; sourceTree = "<group>"; };
+		E2FBD7611FADA0E600AD8280 /* CLHighlightShadowEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHighlightShadowEffect.h; sourceTree = "<group>"; };
+		E2FBD7621FADA0E600AD8280 /* CLHighlightShadowEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHighlightShadowEffect.m; sourceTree = "<group>"; };
+		E2FBD7631FADA0E600AD8280 /* CLHueEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLHueEffect.h; sourceTree = "<group>"; };
+		E2FBD7641FADA0E600AD8280 /* CLHueEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLHueEffect.m; sourceTree = "<group>"; };
+		E2FBD7651FADA0E600AD8280 /* CLPixellateEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPixellateEffect.h; sourceTree = "<group>"; };
+		E2FBD7661FADA0E600AD8280 /* CLPixellateEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPixellateEffect.m; sourceTree = "<group>"; };
+		E2FBD7671FADA0E600AD8280 /* CLPosterizeEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPosterizeEffect.h; sourceTree = "<group>"; };
+		E2FBD7681FADA0E600AD8280 /* CLPosterizeEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPosterizeEffect.m; sourceTree = "<group>"; };
+		E2FBD7691FADA0E600AD8280 /* CLSpotEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSpotEffect.h; sourceTree = "<group>"; };
+		E2FBD76A1FADA0E600AD8280 /* CLSpotEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSpotEffect.m; sourceTree = "<group>"; };
+		E2FBD76B1FADA0E600AD8280 /* CLEffectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEffectBase.h; sourceTree = "<group>"; };
+		E2FBD76C1FADA0E600AD8280 /* CLEffectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEffectBase.m; sourceTree = "<group>"; };
+		E2FBD76D1FADA0E600AD8280 /* CLEffectTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEffectTool.h; sourceTree = "<group>"; };
+		E2FBD76E1FADA0E600AD8280 /* CLEffectTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEffectTool.m; sourceTree = "<group>"; };
+		E2FBD7701FADA0E600AD8280 /* CLFilterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFilterBase.h; sourceTree = "<group>"; };
+		E2FBD7711FADA0E600AD8280 /* CLFilterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFilterBase.m; sourceTree = "<group>"; };
+		E2FBD7721FADA0E600AD8280 /* CLFilterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFilterTool.h; sourceTree = "<group>"; };
+		E2FBD7731FADA0E600AD8280 /* CLFilterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFilterTool.m; sourceTree = "<group>"; };
+		E2FBD7741FADA0E600AD8280 /* CLImageToolBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolBase.h; sourceTree = "<group>"; };
+		E2FBD7751FADA0E600AD8280 /* CLImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageToolBase.m; sourceTree = "<group>"; };
+		E2FBD7771FADA0E600AD8280 /* CLRotateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRotateTool.h; sourceTree = "<group>"; };
+		E2FBD7781FADA0E600AD8280 /* CLRotateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLRotateTool.m; sourceTree = "<group>"; };
+		E2FBD77A1FADA0E600AD8280 /* CLToneCurveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLToneCurveTool.h; sourceTree = "<group>"; };
+		E2FBD77B1FADA0E600AD8280 /* CLToneCurveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLToneCurveTool.m; sourceTree = "<group>"; };
+		E2FBD77D1FADA0E600AD8280 /* CLCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCircleView.h; sourceTree = "<group>"; };
+		E2FBD77E1FADA0E600AD8280 /* CLCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCircleView.m; sourceTree = "<group>"; };
+		E2FBD77F1FADA0E600AD8280 /* CLColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLColorPickerView.h; sourceTree = "<group>"; };
+		E2FBD7801FADA0E600AD8280 /* CLColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLColorPickerView.m; sourceTree = "<group>"; };
+		E2FBD7811FADA0E600AD8280 /* CLImageEditorTheme+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLImageEditorTheme+Private.h"; sourceTree = "<group>"; };
+		E2FBD7821FADA0E600AD8280 /* CLImageEditorTheme+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLImageEditorTheme+Private.m"; sourceTree = "<group>"; };
+		E2FBD7831FADA0E600AD8280 /* CLImageToolInfo+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLImageToolInfo+Private.h"; sourceTree = "<group>"; };
+		E2FBD7841FADA0E600AD8280 /* CLImageToolInfo+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLImageToolInfo+Private.m"; sourceTree = "<group>"; };
+		E2FBD7851FADA0E600AD8280 /* CLImageToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolProtocol.h; sourceTree = "<group>"; };
+		E2FBD7861FADA0E600AD8280 /* CLImageToolSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolSettings.h; sourceTree = "<group>"; };
+		E2FBD7871FADA0E600AD8280 /* CLToolbarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLToolbarMenuItem.h; sourceTree = "<group>"; };
+		E2FBD7881FADA0E600AD8280 /* CLToolbarMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLToolbarMenuItem.m; sourceTree = "<group>"; };
+		E2FBD7891FADA0E600AD8280 /* UIView+CLImageToolInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CLImageToolInfo.h"; sourceTree = "<group>"; };
+		E2FBD78A1FADA0E600AD8280 /* UIView+CLImageToolInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CLImageToolInfo.m"; sourceTree = "<group>"; };
+		E2FBD78C1FADA0E600AD8280 /* CLClassList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClassList.h; sourceTree = "<group>"; };
+		E2FBD78D1FADA0E600AD8280 /* CLClassList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClassList.m; sourceTree = "<group>"; };
+		E2FBD78E1FADA0E600AD8280 /* CLSplineInterpolator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSplineInterpolator.h; sourceTree = "<group>"; };
+		E2FBD78F1FADA0E600AD8280 /* CLSplineInterpolator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSplineInterpolator.m; sourceTree = "<group>"; };
+		E2FBD7901FADA0E600AD8280 /* UIDevice+SystemVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SystemVersion.h"; sourceTree = "<group>"; };
+		E2FBD7911FADA0E600AD8280 /* UIDevice+SystemVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SystemVersion.m"; sourceTree = "<group>"; };
+		E2FBD7921FADA0E600AD8280 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		E2FBD7931FADA0E600AD8280 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		E2FBD7941FADA0E600AD8280 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E2FBD7951FADA0E600AD8280 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E2FBD7971FADA0E600AD8280 /* _CLImageEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CLImageEditorViewController.h; sourceTree = "<group>"; };
+		E2FBD7981FADA0E600AD8280 /* _CLImageEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CLImageEditorViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2A956E71F309CB1004D6AEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2A956E11F309CB1004D6AEB = {
+			isa = PBXGroup;
+			children = (
+				E2A956EC1F309CB1004D6AEB /* TJPhotoEditor */,
+				E2A956EB1F309CB1004D6AEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2A956EB1F309CB1004D6AEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2A956EA1F309CB1004D6AEB /* TJPhotoEditor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2A956EC1F309CB1004D6AEB /* TJPhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD73C1FADA0E600AD8280 /* CLImageEditor */,
+				E2A9579B1F30BB79004D6AEB /* Resources */,
+				E2A956ED1F309CB1004D6AEB /* AppDelegate.swift */,
+				E2A956EF1F309CB1004D6AEB /* ViewController.swift */,
+				E2A957A91F31FFB8004D6AEB /* AboutViewController.swift */,
+				E2A957AF1F3209D3004D6AEB /* DimmingPresentationController.h */,
+				E2A957B01F3209D3004D6AEB /* DimmingPresentationController.m */,
+				E2A957B11F3209D3004D6AEB /* GradientView.h */,
+				E2A957B21F3209D3004D6AEB /* GradientView.m */,
+				E2A957B51F320A28004D6AEB /* ExpandAnimationController.h */,
+				E2A957B61F320A28004D6AEB /* ExpandAnimationController.m */,
+				E2A957B71F320A28004D6AEB /* ShrinkDismissalAnimationController.h */,
+				E2A957B81F320A28004D6AEB /* ShrinkDismissalAnimationController.m */,
+				E2A956F11F309CB1004D6AEB /* Main.storyboard */,
+				E2A956F41F309CB1004D6AEB /* Assets.xcassets */,
+				E2A956F61F309CB1004D6AEB /* LaunchScreen.storyboard */,
+				E2A956F91F309CB1004D6AEB /* Info.plist */,
+				E2A957A51F30C454004D6AEB /* TJPhotoEditor-Bridging-Header.h */,
+				E2A957D81F32156C004D6AEB /* Localizable.strings */,
+				E2A957E01F3216C6004D6AEB /* InfoPlist.strings */,
+			);
+			path = TJPhotoEditor;
+			sourceTree = "<group>";
+		};
+		E2A9579B1F30BB79004D6AEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2A957E21F321844004D6AEB /* ImagePlaceholder-ZH.png */,
+				E2A957E31F321844004D6AEB /* ImagePlaceholder-ZH.psd */,
+				E2A957A01F30BC40004D6AEB /* ImagePlaceholder.png */,
+				E2A9579C1F30BB79004D6AEB /* ImagePlaceholder.psd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E2FBD73C1FADA0E600AD8280 /* CLImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD73D1FADA0E600AD8280 /* CLImageEditor.bundle */,
+				E2FBD73E1FADA0E600AD8280 /* CLImageEditor.h */,
+				E2FBD73F1FADA0E600AD8280 /* CLImageEditor.m */,
+				E2FBD7401FADA0E600AD8280 /* CLImageEditorTheme.h */,
+				E2FBD7411FADA0E600AD8280 /* CLImageEditorTheme.m */,
+				E2FBD7421FADA0E600AD8280 /* CLImageToolInfo.h */,
+				E2FBD7431FADA0E600AD8280 /* CLImageToolInfo.m */,
+				E2FBD7441FADA0E600AD8280 /* ImageTools */,
+				E2FBD78B1FADA0E600AD8280 /* Utils */,
+				E2FBD7961FADA0E600AD8280 /* ViewController */,
+			);
+			path = CLImageEditor;
+			sourceTree = "<group>";
+		};
+		E2FBD7441FADA0E600AD8280 /* ImageTools */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7451FADA0E600AD8280 /* CLAdjustmentTool */,
+				E2FBD7481FADA0E600AD8280 /* CLArrowTool */,
+				E2FBD74D1FADA0E600AD8280 /* CLBlurTool */,
+				E2FBD7501FADA0E600AD8280 /* CLBubbleTool */,
+				E2FBD7551FADA0E600AD8280 /* CLClippingTool */,
+				E2FBD7581FADA0E600AD8280 /* CLDrawTool */,
+				E2FBD75B1FADA0E600AD8280 /* CLEffectTool */,
+				E2FBD76F1FADA0E600AD8280 /* CLFilterTool */,
+				E2FBD7741FADA0E600AD8280 /* CLImageToolBase.h */,
+				E2FBD7751FADA0E600AD8280 /* CLImageToolBase.m */,
+				E2FBD7761FADA0E600AD8280 /* CLRotateTool */,
+				E2FBD7791FADA0E600AD8280 /* CLToneCurveTool */,
+				E2FBD77C1FADA0E600AD8280 /* ToolSettings */,
+			);
+			path = ImageTools;
+			sourceTree = "<group>";
+		};
+		E2FBD7451FADA0E600AD8280 /* CLAdjustmentTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7461FADA0E600AD8280 /* CLAdjustmentTool.h */,
+				E2FBD7471FADA0E600AD8280 /* CLAdjustmentTool.m */,
+			);
+			path = CLAdjustmentTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7481FADA0E600AD8280 /* CLArrowTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7491FADA0E600AD8280 /* ArrowView.h */,
+				E2FBD74A1FADA0E600AD8280 /* ArrowView.m */,
+				E2FBD74B1FADA0E600AD8280 /* CLArrowTool.h */,
+				E2FBD74C1FADA0E600AD8280 /* CLArrowTool.m */,
+			);
+			path = CLArrowTool;
+			sourceTree = "<group>";
+		};
+		E2FBD74D1FADA0E600AD8280 /* CLBlurTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD74E1FADA0E600AD8280 /* CLBlurTool.h */,
+				E2FBD74F1FADA0E600AD8280 /* CLBlurTool.m */,
+			);
+			path = CLBlurTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7501FADA0E600AD8280 /* CLBubbleTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7511FADA0E600AD8280 /* CLBubbleTool.h */,
+				E2FBD7521FADA0E600AD8280 /* CLBubbleTool.m */,
+				E2FBD7531FADA0E600AD8280 /* ShapeView.h */,
+				E2FBD7541FADA0E600AD8280 /* ShapeView.m */,
+			);
+			path = CLBubbleTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7551FADA0E600AD8280 /* CLClippingTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7561FADA0E600AD8280 /* CLClippingTool.h */,
+				E2FBD7571FADA0E600AD8280 /* CLClippingTool.m */,
+			);
+			path = CLClippingTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7581FADA0E600AD8280 /* CLDrawTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7591FADA0E600AD8280 /* CLDrawTool.h */,
+				E2FBD75A1FADA0E600AD8280 /* CLDrawTool.m */,
+			);
+			path = CLDrawTool;
+			sourceTree = "<group>";
+		};
+		E2FBD75B1FADA0E600AD8280 /* CLEffectTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD75C1FADA0E600AD8280 /* CLEffect */,
+				E2FBD76B1FADA0E600AD8280 /* CLEffectBase.h */,
+				E2FBD76C1FADA0E600AD8280 /* CLEffectBase.m */,
+				E2FBD76D1FADA0E600AD8280 /* CLEffectTool.h */,
+				E2FBD76E1FADA0E600AD8280 /* CLEffectTool.m */,
+			);
+			path = CLEffectTool;
+			sourceTree = "<group>";
+		};
+		E2FBD75C1FADA0E600AD8280 /* CLEffect */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD75D1FADA0E600AD8280 /* CLBloomEffect.h */,
+				E2FBD75E1FADA0E600AD8280 /* CLBloomEffect.m */,
+				E2FBD75F1FADA0E600AD8280 /* CLGloomEffect.h */,
+				E2FBD7601FADA0E600AD8280 /* CLGloomEffect.m */,
+				E2FBD7611FADA0E600AD8280 /* CLHighlightShadowEffect.h */,
+				E2FBD7621FADA0E600AD8280 /* CLHighlightShadowEffect.m */,
+				E2FBD7631FADA0E600AD8280 /* CLHueEffect.h */,
+				E2FBD7641FADA0E600AD8280 /* CLHueEffect.m */,
+				E2FBD7651FADA0E600AD8280 /* CLPixellateEffect.h */,
+				E2FBD7661FADA0E600AD8280 /* CLPixellateEffect.m */,
+				E2FBD7671FADA0E600AD8280 /* CLPosterizeEffect.h */,
+				E2FBD7681FADA0E600AD8280 /* CLPosterizeEffect.m */,
+				E2FBD7691FADA0E600AD8280 /* CLSpotEffect.h */,
+				E2FBD76A1FADA0E600AD8280 /* CLSpotEffect.m */,
+			);
+			path = CLEffect;
+			sourceTree = "<group>";
+		};
+		E2FBD76F1FADA0E600AD8280 /* CLFilterTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7701FADA0E600AD8280 /* CLFilterBase.h */,
+				E2FBD7711FADA0E600AD8280 /* CLFilterBase.m */,
+				E2FBD7721FADA0E600AD8280 /* CLFilterTool.h */,
+				E2FBD7731FADA0E600AD8280 /* CLFilterTool.m */,
+			);
+			path = CLFilterTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7761FADA0E600AD8280 /* CLRotateTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7771FADA0E600AD8280 /* CLRotateTool.h */,
+				E2FBD7781FADA0E600AD8280 /* CLRotateTool.m */,
+			);
+			path = CLRotateTool;
+			sourceTree = "<group>";
+		};
+		E2FBD7791FADA0E600AD8280 /* CLToneCurveTool */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD77A1FADA0E600AD8280 /* CLToneCurveTool.h */,
+				E2FBD77B1FADA0E600AD8280 /* CLToneCurveTool.m */,
+			);
+			path = CLToneCurveTool;
+			sourceTree = "<group>";
+		};
+		E2FBD77C1FADA0E600AD8280 /* ToolSettings */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD77D1FADA0E600AD8280 /* CLCircleView.h */,
+				E2FBD77E1FADA0E600AD8280 /* CLCircleView.m */,
+				E2FBD77F1FADA0E600AD8280 /* CLColorPickerView.h */,
+				E2FBD7801FADA0E600AD8280 /* CLColorPickerView.m */,
+				E2FBD7811FADA0E600AD8280 /* CLImageEditorTheme+Private.h */,
+				E2FBD7821FADA0E600AD8280 /* CLImageEditorTheme+Private.m */,
+				E2FBD7831FADA0E600AD8280 /* CLImageToolInfo+Private.h */,
+				E2FBD7841FADA0E600AD8280 /* CLImageToolInfo+Private.m */,
+				E2FBD7851FADA0E600AD8280 /* CLImageToolProtocol.h */,
+				E2FBD7861FADA0E600AD8280 /* CLImageToolSettings.h */,
+				E2FBD7871FADA0E600AD8280 /* CLToolbarMenuItem.h */,
+				E2FBD7881FADA0E600AD8280 /* CLToolbarMenuItem.m */,
+				E2FBD7891FADA0E600AD8280 /* UIView+CLImageToolInfo.h */,
+				E2FBD78A1FADA0E600AD8280 /* UIView+CLImageToolInfo.m */,
+			);
+			path = ToolSettings;
+			sourceTree = "<group>";
+		};
+		E2FBD78B1FADA0E600AD8280 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD78C1FADA0E600AD8280 /* CLClassList.h */,
+				E2FBD78D1FADA0E600AD8280 /* CLClassList.m */,
+				E2FBD78E1FADA0E600AD8280 /* CLSplineInterpolator.h */,
+				E2FBD78F1FADA0E600AD8280 /* CLSplineInterpolator.m */,
+				E2FBD7901FADA0E600AD8280 /* UIDevice+SystemVersion.h */,
+				E2FBD7911FADA0E600AD8280 /* UIDevice+SystemVersion.m */,
+				E2FBD7921FADA0E600AD8280 /* UIImage+Utility.h */,
+				E2FBD7931FADA0E600AD8280 /* UIImage+Utility.m */,
+				E2FBD7941FADA0E600AD8280 /* UIView+Frame.h */,
+				E2FBD7951FADA0E600AD8280 /* UIView+Frame.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2FBD7961FADA0E600AD8280 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E2FBD7971FADA0E600AD8280 /* _CLImageEditorViewController.h */,
+				E2FBD7981FADA0E600AD8280 /* _CLImageEditorViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2A956E91F309CB1004D6AEB /* TJPhotoEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2A956FC1F309CB1004D6AEB /* Build configuration list for PBXNativeTarget "TJPhotoEditor" */;
+			buildPhases = (
+				E2A956E61F309CB1004D6AEB /* Sources */,
+				E2A956E71F309CB1004D6AEB /* Frameworks */,
+				E2A956E81F309CB1004D6AEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TJPhotoEditor;
+			productName = TJPhotoEditor;
+			productReference = E2A956EA1F309CB1004D6AEB /* TJPhotoEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2A956E21F309CB1004D6AEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tom and Jerry";
+				TargetAttributes = {
+					E2A956E91F309CB1004D6AEB = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E2A956E51F309CB1004D6AEB /* Build configuration list for PBXProject "TJPhotoEditor" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = E2A956E11F309CB1004D6AEB;
+			productRefGroup = E2A956EB1F309CB1004D6AEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2A956E91F309CB1004D6AEB /* TJPhotoEditor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2A956E81F309CB1004D6AEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A956F81F309CB1004D6AEB /* LaunchScreen.storyboard in Resources */,
+				E2A957E51F321844004D6AEB /* ImagePlaceholder-ZH.psd in Resources */,
+				E2A957DE1F3216C6004D6AEB /* InfoPlist.strings in Resources */,
+				E2A957A11F30BC40004D6AEB /* ImagePlaceholder.png in Resources */,
+				E2A957DA1F32156C004D6AEB /* Localizable.strings in Resources */,
+				E2A9579D1F30BB79004D6AEB /* ImagePlaceholder.psd in Resources */,
+				E2A957E41F321844004D6AEB /* ImagePlaceholder-ZH.png in Resources */,
+				E2FBD7991FADA0E700AD8280 /* CLImageEditor.bundle in Resources */,
+				E2A956F51F309CB1004D6AEB /* Assets.xcassets in Resources */,
+				E2A956F31F309CB1004D6AEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2A956E61F309CB1004D6AEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FBD7A81FADA0E700AD8280 /* CLHueEffect.m in Sources */,
+				E2FBD7A31FADA0E700AD8280 /* CLClippingTool.m in Sources */,
+				E2FBD7A11FADA0E700AD8280 /* CLBubbleTool.m in Sources */,
+				E2FBD79F1FADA0E700AD8280 /* CLArrowTool.m in Sources */,
+				E2FBD7A21FADA0E700AD8280 /* ShapeView.m in Sources */,
+				E2FBD7A91FADA0E700AD8280 /* CLPixellateEffect.m in Sources */,
+				E2FBD7AC1FADA0E700AD8280 /* CLEffectBase.m in Sources */,
+				E2FBD7B11FADA0E700AD8280 /* CLRotateTool.m in Sources */,
+				E2FBD7A61FADA0E700AD8280 /* CLGloomEffect.m in Sources */,
+				E2FBD7B81FADA0E700AD8280 /* UIView+CLImageToolInfo.m in Sources */,
+				E2FBD7A71FADA0E700AD8280 /* CLHighlightShadowEffect.m in Sources */,
+				E2FBD7AE1FADA0E700AD8280 /* CLFilterBase.m in Sources */,
+				E2A956F01F309CB1004D6AEB /* ViewController.swift in Sources */,
+				E2FBD7BD1FADA0E700AD8280 /* UIView+Frame.m in Sources */,
+				E2A956EE1F309CB1004D6AEB /* AppDelegate.swift in Sources */,
+				E2FBD7BA1FADA0E700AD8280 /* CLSplineInterpolator.m in Sources */,
+				E2FBD7A01FADA0E700AD8280 /* CLBlurTool.m in Sources */,
+				E2FBD7A51FADA0E700AD8280 /* CLBloomEffect.m in Sources */,
+				E2A957BA1F320A28004D6AEB /* ShrinkDismissalAnimationController.m in Sources */,
+				E2FBD7A41FADA0E700AD8280 /* CLDrawTool.m in Sources */,
+				E2FBD7B51FADA0E700AD8280 /* CLImageEditorTheme+Private.m in Sources */,
+				E2FBD79B1FADA0E700AD8280 /* CLImageEditorTheme.m in Sources */,
+				E2FBD7AD1FADA0E700AD8280 /* CLEffectTool.m in Sources */,
+				E2FBD7BC1FADA0E700AD8280 /* UIImage+Utility.m in Sources */,
+				E2FBD7B41FADA0E700AD8280 /* CLColorPickerView.m in Sources */,
+				E2FBD79A1FADA0E700AD8280 /* CLImageEditor.m in Sources */,
+				E2FBD7B71FADA0E700AD8280 /* CLToolbarMenuItem.m in Sources */,
+				E2FBD7B61FADA0E700AD8280 /* CLImageToolInfo+Private.m in Sources */,
+				E2FBD7B31FADA0E700AD8280 /* CLCircleView.m in Sources */,
+				E2FBD7B21FADA0E700AD8280 /* CLToneCurveTool.m in Sources */,
+				E2FBD7B91FADA0E700AD8280 /* CLClassList.m in Sources */,
+				E2A957B91F320A28004D6AEB /* ExpandAnimationController.m in Sources */,
+				E2A957AA1F31FFB8004D6AEB /* AboutViewController.swift in Sources */,
+				E2FBD7B01FADA0E700AD8280 /* CLImageToolBase.m in Sources */,
+				E2A957B41F3209D3004D6AEB /* GradientView.m in Sources */,
+				E2FBD79E1FADA0E700AD8280 /* ArrowView.m in Sources */,
+				E2FBD79C1FADA0E700AD8280 /* CLImageToolInfo.m in Sources */,
+				E2FBD7AF1FADA0E700AD8280 /* CLFilterTool.m in Sources */,
+				E2FBD79D1FADA0E700AD8280 /* CLAdjustmentTool.m in Sources */,
+				E2A957B31F3209D3004D6AEB /* DimmingPresentationController.m in Sources */,
+				E2FBD7BE1FADA0E700AD8280 /* _CLImageEditorViewController.m in Sources */,
+				E2FBD7BB1FADA0E700AD8280 /* UIDevice+SystemVersion.m in Sources */,
+				E2FBD7AA1FADA0E700AD8280 /* CLPosterizeEffect.m in Sources */,
+				E2FBD7AB1FADA0E700AD8280 /* CLSpotEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2A956F11F309CB1004D6AEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A956F21F309CB1004D6AEB /* Base */,
+				E2A957BB1F3212E3004D6AEB /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2A956F61F309CB1004D6AEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A956F71F309CB1004D6AEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E2A957D81F32156C004D6AEB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A957D91F32156C004D6AEB /* Base */,
+				E2A957DB1F321575004D6AEB /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		E2A957E01F3216C6004D6AEB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2A957DF1F3216C6004D6AEB /* Base */,
+				E2A957E11F3216C8004D6AEB /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2A956FA1F309CB1004D6AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2A956FB1F309CB1004D6AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2A956FD1F309CB1004D6AEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EUX5R9PE3W;
+				INFOPLIST_FILE = TJPhotoEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomandjerry.PhotoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TJPhotoEditor/TJPhotoEditor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2A956FE1F309CB1004D6AEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EUX5R9PE3W;
+				INFOPLIST_FILE = TJPhotoEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomandjerry.PhotoEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TJPhotoEditor/TJPhotoEditor-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2A956E51F309CB1004D6AEB /* Build configuration list for PBXProject "TJPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A956FA1F309CB1004D6AEB /* Debug */,
+				E2A956FB1F309CB1004D6AEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2A956FC1F309CB1004D6AEB /* Build configuration list for PBXNativeTarget "TJPhotoEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2A956FD1F309CB1004D6AEB /* Debug */,
+				E2A956FE1F309CB1004D6AEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2A956E21F309CB1004D6AEB /* Project object */;
+}

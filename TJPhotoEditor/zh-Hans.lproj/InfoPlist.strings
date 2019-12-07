@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  TJPhotoEditor
+
+  Created by Tom Shen on 02/08/2017.
+  Copyright © 2017 Tom and Jerry. All rights reserved.
+*/
+
+"NSCameraUsageDescription" = "使用照相机拍摄需要编辑的照片";
+"NSPhotoLibraryUsageDescription" = "从相册里选择需要编辑的照片";
