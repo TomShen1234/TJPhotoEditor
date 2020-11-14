@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "关闭"; ObjectID = "AOr-9w-Gs5"; */
+"AOr-9w-Gs5.normalTitle" = "关闭";
+
+/* Class = "UIBarButtonItem"; title = "返回编辑器"; ObjectID = "Ldg-Yi-hMW"; */
+"Ldg-Yi-hMW.title" = "返回编辑器";
+
+/* Class = "UIBarButtonItem"; title = "新照片"; ObjectID = "Zo8-RJ-K5X"; */
+"Zo8-RJ-K5X.title" = "新照片";
+
+/* Class = "UILabel"; text = "Version: V(B)"; ObjectID = "aLF-zG-qXq"; */
+"aLF-zG-qXq.text" = "Version: V(B)";
+
+/* Class = "UILabel"; text = "About Label"; ObjectID = "aYA-zS-HIt"; */
+"aYA-zS-HIt.text" = "About Label";
+
+/* Class = "UIBarButtonItem"; title = "分享"; ObjectID = "fHg-T9-fgD"; */
+"fHg-T9-fgD.title" = "分享";
+
+/* Class = "UINavigationItem"; title = "TJPhotoEditor"; ObjectID = "mXC-9c-jKp"; */
+"mXC-9c-jKp.title" = "TJPhotoEditor";
+
+/* Class = "UIBarButtonItem"; title = "保存"; ObjectID = "q0M-R7-nXD"; */
+"q0M-R7-nXD.title" = "保存";

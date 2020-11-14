@@ -11,6 +11,7 @@
 
 @required
 + (NSString*)defaultIconImagePath;
++ (NSString*)defaultIconImagePathDark;
 + (CGFloat)defaultDockedNumber;
 + (NSString*)defaultTitle;
 + (BOOL)isAvailable;

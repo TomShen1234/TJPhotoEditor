@@ -9,6 +9,7 @@
 import UIKit
 import AssetsLibrary
 import MobileCoreServices
+import LinkPresentation
 
 class ViewController: UIViewController {
     @IBOutlet weak var placeholderImageView: UIImageView!
@@ -47,8 +48,7 @@ class ViewController: UIViewController {
             let saveImageCommand = UIKeyCommand(input: "S", modifierFlags: .command, action: #selector(saveImage(_:)))
             saveImageCommand.discoverabilityTitle = "Save Image"
             
-            let shareImageCommand = UIKeyCommand(input: "S", modifierFlags: [.command, .alternate], action: #selector(shareCommandAction
-                ))
+            let shareImageCommand = UIKeyCommand(input: "S", modifierFlags: [.command, .alternate], action: #selector(shareCommandAction))
             shareImageCommand.discoverabilityTitle = "Share Image"
             
             return [takePhotoCommand, chooseFromLibraryCommand, backToEditorCommand, saveImageCommand, shareImageCommand]
@@ -213,13 +213,14 @@ class ViewController: UIViewController {
     
     @IBAction func shareImage(_ sender: Any) {
         let image = imageView.image!
-        let shareSheet = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        let shareSheet = UIActivityViewController(activityItems: [image, self], applicationActivities: nil)
         shareSheet.popoverPresentationController?.barButtonItem = sender as? UIBarButtonItem
         present(shareSheet, animated: true, completion: nil)
     }
     
     @IBAction func backToEditor(_ sender: Any) {
         let editor = CLImageEditor(image: imageView.image)!
+        editor.modalPresentationStyle = .fullScreen
         editor.delegate = self
         present(editor, animated: true, completion: nil)
     }
@@ -307,16 +308,11 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
 
         let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         
-        if picker.sourceType == .camera {
-            picker.dismiss(animated: true, completion: nil)
-            let imageEditor = CLImageEditor(image: image)!
-            imageEditor.delegate = self
-            present(imageEditor, animated: true, completion: nil)
-        } else if picker.sourceType == .photoLibrary {
-            let imageEditor = CLImageEditor(image: image)!
-            imageEditor.delegate = self
-            picker.pushViewController(imageEditor, animated: true)
-        }
+        picker.dismiss(animated: true, completion: nil)
+        let imageEditor = CLImageEditor(image: image)!
+        imageEditor.delegate = self
+        imageEditor.modalPresentationStyle = .fullScreen
+        present(imageEditor, animated: true, completion: nil)
     }
 }
 
@@ -327,7 +323,7 @@ extension ViewController: CLImageEditorDelegate {
         editor.dismiss(animated: true, completion: nil)
         
         // Fix zoom scale on iPad
-        if UI_USER_INTERFACE_IDIOM() == .pad {
+        if UIDevice.current.userInterfaceIdiom == .pad {
             // Hack in a delay so that it will actually do it.
             let time = DispatchTime.now() + 0.1
             DispatchQueue.main.asyncAfter(deadline: time, execute: {
@@ -361,7 +357,7 @@ extension ViewController: CLImageEditorDelegate {
         editor.dismiss(animated: true, completion: nil)
         
         // Fix zoom scale on iPad
-        if UI_USER_INTERFACE_IDIOM() == .pad {
+        if UIDevice.current.userInterfaceIdiom == .pad {
             // Hack in a delay so that it will actually do it.
             let time = DispatchTime.now() + 0.1
             DispatchQueue.main.asyncAfter(deadline: time, execute: {
@@ -432,7 +428,6 @@ extension ViewController: UIScrollViewDelegate {
 }
 
 // MARK: - Drag and Drop
-@available(iOS 11.0, *)
 extension ViewController: UIDragInteractionDelegate, UIDropInteractionDelegate {
     func dragInteraction(_ interaction: UIDragInteraction, itemsForBeginning session: UIDragSession) -> [UIDragItem] {
         let itemProvider = NSItemProvider(item: imageView.image!, typeIdentifier: kUTTypeImage as String)
@@ -471,6 +466,25 @@ extension ViewController: UIDragInteractionDelegate, UIDropInteractionDelegate {
     }
 }
 
+// MARK: - Activity Helper
+extension ViewController: UIActivityItemSource {
+    func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return ""
+    }
+    
+    func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        return nil
+    }
+    
+    func activityViewControllerLinkMetadata(_ activityViewController: UIActivityViewController) -> LPLinkMetadata? {
+        guard let image = imageView.image else { return nil }
+        let imageProvider = NSItemProvider(object: image)
+        let metadata = LPLinkMetadata()
+        metadata.imageProvider = imageProvider
+        metadata.title = "Share image"
+        return metadata
+    }
+}
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {

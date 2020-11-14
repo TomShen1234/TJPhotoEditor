@@ -14,6 +14,11 @@
     return nil;
 }
 
++ (NSString*)defaultIconImagePathDark
+{
+    return nil;
+}
+
 + (NSArray*)subtools
 {
     return nil;

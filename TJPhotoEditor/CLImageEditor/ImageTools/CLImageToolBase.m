@@ -21,8 +21,14 @@
 
 + (NSString*)defaultIconImagePath
 {
-    CLImageEditorTheme *theme = [CLImageEditorTheme theme];
-    return [NSString stringWithFormat:@"%@/%@/%@/icon.png", CLImageEditorTheme.bundle.bundlePath, NSStringFromClass([self class]), theme.toolIconColor];
+//    CLImageEditorTheme *theme = [CLImageEditorTheme theme];
+    return [NSString stringWithFormat:@"%@/%@/black/icon.png", CLImageEditorTheme.bundle.bundlePath, NSStringFromClass([self class])/*, theme.toolIconColor*/];
+}
+
++ (NSString*)defaultIconImagePathDark
+{
+//    CLImageEditorTheme *theme = [CLImageEditorTheme theme];
+    return [NSString stringWithFormat:@"%@/%@/white/icon.png", CLImageEditorTheme.bundle.bundlePath, NSStringFromClass([self class])/*, theme.toolIconColor*/];
 }
 
 + (CGFloat)defaultDockedNumber

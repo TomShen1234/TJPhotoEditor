@@ -16,6 +16,11 @@
     return [NSString stringWithFormat:@"%@/CLEffectTool/%@.png", CLImageEditorTheme.bundle.bundlePath, NSStringFromClass([self class])];
 }
 
++ (NSString*)defaultIconImagePathDark
+{
+    return [NSString stringWithFormat:@"%@/CLEffectTool/%@.png", CLImageEditorTheme.bundle.bundlePath, NSStringFromClass([self class])];
+}
+
 + (CGFloat)defaultDockedNumber
 {
     // Effect tools are sorted according to the dockedNumber in tool bar.

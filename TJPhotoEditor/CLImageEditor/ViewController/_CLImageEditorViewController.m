@@ -498,6 +498,11 @@ static const CGFloat kMenuBarHeight = 80.0f;
     return nil;
 }
 
++ (NSString*)defaultIconImagePathDark
+{
+    return nil;
+}
+
 + (CGFloat)defaultDockedNumber
 {
     return 0;

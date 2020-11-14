@@ -66,7 +66,28 @@
 
 - (UIImage*)iconImage
 {
-    return [UIImage fastImageWithContentsOfFile:self.iconImagePath];
+    UITraitCollection *const currentTraitCollection = [UITraitCollection currentTraitCollection];
+    UITraitCollection *const pureLightTraitCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleLight];
+    UITraitCollection *const lightTraitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[currentTraitCollection, pureLightTraitCollection]];
+    UITraitCollection *const pureDarkTraitCollection = [UITraitCollection traitCollectionWithUserInterfaceStyle:UIUserInterfaceStyleDark];
+    UITraitCollection *const darkTraitCollection = [UITraitCollection traitCollectionWithTraitsFromCollections:@[currentTraitCollection, pureDarkTraitCollection]];
+    
+    __block UIImage *lightImage;
+    __block UIImage *darkImage;
+    
+    [lightTraitCollection performAsCurrentTraitCollection:^{
+        lightImage = [UIImage fastImageWithContentsOfFile:self.iconImagePath];
+    }];
+    
+    [darkTraitCollection performAsCurrentTraitCollection:^{
+        darkImage = [UIImage fastImageWithContentsOfFile:self.iconImagePathDark];
+    }];
+    
+    [lightImage.imageAsset registerImage:darkImage withTraitCollection:pureDarkTraitCollection];
+    
+    return lightImage;
+    
+//    return [UIImage fastImageWithContentsOfFile:self.iconImagePath];
 }
 
 - (NSString*)toolName
